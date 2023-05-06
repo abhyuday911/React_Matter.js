@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Engine, Render, World, Bodies } from "matter-js";
 import { useNavigate } from "react-router-dom";
 
-const Maatter = () => {
+const Matter = () => {
   const navigate = useNavigate();
 
   const sceneRef = useRef(null);
@@ -54,4 +54,4 @@ const Maatter = () => {
   );
 };
 
-export default Maatter;
+export default Matter;
