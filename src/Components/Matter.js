@@ -16,8 +16,9 @@ const Matter = () => {
       element: sceneRef.current,
       engine: engineRef.current,
       options: {
-        width: 800,
-        height: 600,
+        width: window.innerWidth,
+        height: window.innerHeight,
+        background: "transparent",
         wireframes: false,
       },
     });
@@ -49,7 +50,7 @@ const Matter = () => {
   return (
     <>
       <div ref={sceneRef} />
-      <button onClick={() => navigate("/profile")}>Profile Page</button>
+      <button className="test-btn" onClick={() => navigate("/profile")}>Profile Page</button>
     </>
   );
 };

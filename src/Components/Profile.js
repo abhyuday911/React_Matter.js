@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 const Profile = () => {
     const navigate = useNavigate();
   return (
-    <button onClick={() => navigate("/")}>Home Page</button>
+    <button className="test-btn" onClick={() => navigate("/")}>Home Page</button>
   )
 }
 
